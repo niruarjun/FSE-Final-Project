@@ -1,0 +1,38 @@
+<div class="container-flex">
+<div class="row" style="margin-top: 30px;">
+  <div class="col-lg-3" >
+    <div class="bg-light border-right" id="sidebar-wrapper" style="background-color: darkkhaki;">
+        
+      <a [routerLink]="['/newsfeed']" class="list-group-item btn list-group-item" style="background-color:lightgoldenrodyellow;">News Feed</a>
+      <a [routerLink]="['/blockuser']" class="list-group-item btn list-group-item" style="background-color:lightgoldenrodyellow;">Blocked Accounts</a>
+      <a [routerLink]="['/accountdetails']" class="list-group-item btn list-group-item " style="background-color:lightgoldenrodyellow;">Account update</a>
+      <a [routerLink]="['/search']" class="list-group-item btn list-group-item " style="background-color:lightgoldenrodyellow;">Search</a>
+      <a [routerLink]="['/login']" (click)="logout()" class="list-group-item btn list-group-item" style="background-color:lightgoldenrodyellow;">Logout</a>
+
+  </div>
+    </div>
+
+  <div class="col-10 col-md-8" style="font-size: 2.4vh; background-color: powderblue; text-align: center;">
+
+      <table class="table table-hover ">
+        <thead >
+        <tr>
+          <th > Date Time </th>
+          <th> Description</th>
+          
+    
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let n of arrofmedia | reverse">
+            <td>{{n.date}}</td>
+            <td>you shared {{n.description}} , usermedia Image with {{n.title}} </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+</div>
+</div>
