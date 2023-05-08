@@ -23,14 +23,14 @@
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "firebase": "^7.10.0",
-    "npm": "^6.4.1",
+    "npm": "^9.6.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.5",
-    "@angular/cli": "~9.0.5",
+    "@angular/cli": "~9.1.0",
     "@angular/compiler-cli": "~9.0.5",
     "@angular/language-service": "~9.0.5",
     "@types/jasmine": "~3.5.0",
